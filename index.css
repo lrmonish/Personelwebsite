@@ -1,0 +1,633 @@
+* {
+    Padding: 0;
+    Box-Sizing: Border-Box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+ ::-webkit-scrollbar-thumb:vertical {
+    display: none;
+}
+
+body {
+    background: #Fff;
+    font-size: 18px;
+    scroll-padding-top: 250px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* home */
+
+A {
+    Text-Decoration: None;
+}
+
+.Hero {
+    background-color: #Fff;
+    Width: 100%;
+    height: 23cm;
+    border: 2;
+}
+
+.main-nav {
+    display: flex;
+    Align-Items: Center;
+    Justify-Content: Space-Between;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding-left: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white !important;
+}
+
+
+/*Nav {
+    display: flex;
+    Align-Items: Center;
+    Justify-Content: Space-Between;
+    Padding: 20px;
+    margin-left: 336px;
+    margin-right: 336px;
+    position: fixed;
+    background-color: #Fff;
+    backface-visibility: hidden;
+}*/
+
+Nav Ul Li {
+    List-Style: None;
+    Display: Inline-Block;
+    Padding: 40px 60px;
+}
+
+Nav Ul Li A {
+    Color: #1d1d24;
+    Position: Relative;
+    Padding: 5px 0;
+    align-items: center;
+}
+
+Nav Ul Li A:hover {
+    Color: #Fd4766;
+}
+
+Nav Ul Li A:after {
+    Content: "";
+    Position: Absolute;
+    Left: 0;
+    Width: 0;
+    Height: 3px;
+    Background: #Fd4766;
+    Transition: 0.3s;
+    Bottom: 0;
+}
+
+Nav Ul Li A:hover:after {
+    Width: 100%;
+}
+
+.Btn {
+    Color: #Fff;
+    Font-Size: 16px;
+    Text-Transform: Uppercase;
+    Letter-Spacing: 2px;
+    Padding: 16px 40px;
+    Border-Radius: 500px;
+    Display: Inline-Block;
+    Font-Weight: 500;
+    Transition: All 0.2s Ease-In-Out;
+    Background-Size: 152% 100%;
+    Background: #Fd4766;
+    Border: 2px Solid #Fd4766;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    Background: Transparent;
+    Border-Color: #Fd4766;
+    Color: #Fd4766;
+}
+
+.Content {
+    Position: Absolute;
+    Top: 35%;
+    Left: 8%;
+}
+
+.Content .Title {
+    Color: #0a0a0a;
+    Font-Size: 15px;
+    Text-Transform: Uppercase;
+    Letter-Spacing: 4px;
+    Display: Inline-Block;
+    Margin-Bottom: 20px;
+    Background: Linear-Gradient( 120deg, #1c99fe 20.69%, #7644ff 50.19%, #Fd4766 79.69%);
+    -webkit-background-clip: text;
+    -Webkit-Text-Fill-Color: Transparent;
+}
+
+.Content H1 {
+    Color: #1f1f25;
+    Font-Size: 75px;
+    Font-Weight: 900;
+    Line-Height: 90px;
+    Text-Transform: Inherit;
+    Width: 70%;
+}
+
+.Content H1 Span {
+    Color: #Fd4766;
+}
+
+.Content P {
+    Width: 55%;
+    Color: #202020;
+    Margin-Top: 25px;
+    Margin-Bottom: 30px;
+}
+
+
+/* about*/
+
+.about1 {
+    background-color: #Fff;
+    padding: 10px;
+}
+
+.head1 {
+    color: #Fd4766;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 50px 20px 30px;
+}
+
+.head2 {
+    text-align: center;
+    font-weight: 700;
+    color: #Fd4766;
+    box-shadow: 0px 5px 15px 0px rgba(232, 110, 110, 0.3);
+}
+
+.head3 {
+    text-align: center;
+    font-weight: 700;
+    color: #0f0608;
+    box-shadow: 0px 5px 15px 0px rgba(232, 110, 110, 0.3);
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.content1 {
+    text-align: justify;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 20px;
+}
+
+.para1 {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content1>ul {
+    display: inline-block;
+}
+
+.content1>li :first-child {
+    margin-bottom: 20px;
+}
+
+
+/* contactme */
+
+.container {
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-box {
+    background-color: #Fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    height: 8cm;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    height: 14cm;
+    padding: 40px 60px;
+    background-color: #Fd4766;
+    color: rgb(9, 9, 11);
+}
+
+.link1 {
+    width: 50px;
+    height: 50px;
+    image-resolution: 50px;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #Fd4766;
+    box-shadow: 0px 5px 15px 0px rgba(232, 110, 110, 0.3);
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin: bottom 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    border-width: 2px;
+    border-top: #ccc;
+    border-color: #ccc;
+    border-left: #ccc;
+    border-right: #ccc;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(1, 1, 1);
+}
+
+button {
+    background: #Fd4766;
+    margin-bottom: 2cm;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+    color: #Fd4766;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    color: #f4f0f0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+    color: #f4f0f0;
+    font: weight 600px;
+    margin: bottom 30px;
+}
+
+
+/* projects */
+
+.prj1 {
+    image-resolution: 100px, 100px;
+}
+
+.image-sliderfade {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.proj2 {
+    width: 50%;
+    height: 20%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.myproj {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+    color: #Fd4766;
+    box-shadow: 0px 5px 15px 0px rgba(232, 110, 110, 0.3);
+}
+
+.projbtn {
+    Color: #Fff;
+    Font-Size: 16px;
+    Text-Transform: Uppercase;
+    Letter-Spacing: 2px;
+    Padding: 20px 40px;
+    Border-Radius: 700px;
+    Display: Inline-Block;
+    Font-Weight: 500px;
+    Transition: All 0.4s Ease-In-Out;
+    Background-Size: 152% 100%;
+    Background: #Fd4766;
+    Border: 2px Solid #Fd4766;
+    margin-top: 200px;
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.projbtn:hover {
+    Background: Transparent;
+    Border-Color: #Fd4766;
+    Color: #Fd4766;
+}
+
+
+/* Slideshow container */
+
+.container1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 20px 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40%;
+    background: rgba(0, 0, 0, .7);
+    text-align: left;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: transparent;
+    border-color: #ddd;
+    /* border-width: 5px; */
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: border-color 0.6s ease;
+}
+
+.active {
+    border-color: #666;
+}
+
+
+/* Animation */
+
+.fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-image {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-image {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* SKILLS */
+
+.skill-bars {
+    padding: 25px 30px;
+    width: 1000px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #Fd4766;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+    width: 90%;
+}
+
+.bar .progress-line.css span {
+    width: 85%;
+}
+
+.bar .progress-line.Javascript span {
+    width: 50%;
+}
+
+.bar .progress-line.C span {
+    width: 75%;
+}
+
+.bar .progress-line.Cpp span {
+    width: 65%;
+}
+
+.bar .progress-line.python span {
+    width: 70%;
+}
+
+.bar .progress-line.Java span {
+    width: 60%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "85%";
+}
+
+.progress-line.Javascript span::after {
+    content: "50%";
+}
+
+.progress-line.C span::after {
+    content: "75%";
+}
+
+.progress-line.Cpp span::after {
+    content: "65%";
+}
+
+.progress-line.python span::after {
+    content: "70%";
+}
+
+.progress-line.Java span::after {
+    content: "60%";
+}
+
+.nav-wrapper {
+    background: white;
+}
+
+    .skill-bars{
+        margin: auto !important;
+    }
+    
