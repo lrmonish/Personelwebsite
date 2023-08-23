@@ -11,7 +11,7 @@ function showSlides() {
     var dots = document.getElementsByClassName("dot");
 
     for (i = 0; i < slides.length; i++) {
-        // initially set the display to 
+        // initially set the display to
         // none for every image.
         slides[i].style.display = "none";
     }
