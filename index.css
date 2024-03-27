@@ -600,27 +600,27 @@ img {
 }
 
 .progress-line.css span::after {
-    content: "85%";
+    content: "80%";
 }
 
 .progress-line.Javascript span::after {
-    content: "50%";
+    content: "80%";
 }
 
 .progress-line.C span::after {
-    content: "75%";
-}
-
-.progress-line.Cpp span::after {
-    content: "65%";
-}
-
-.progress-line.python span::after {
     content: "70%";
 }
 
+.progress-line.Cpp span::after {
+    content: "90%";
+}
+
+.progress-line.python span::after {
+    content: "80%";
+}
+
 .progress-line.Java span::after {
-    content: "60%";
+    content: "70%";
 }
 
 .nav-wrapper {
