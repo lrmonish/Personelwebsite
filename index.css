@@ -537,27 +537,27 @@ img {
 }
 
 .bar .progress-line.css span {
-    width: 85%;
+    width: 80%;
 }
 
 .bar .progress-line.Javascript span {
-    width: 50%;
+    width: 85%;
 }
 
 .bar .progress-line.C span {
-    width: 75%;
-}
-
-.bar .progress-line.Cpp span {
-    width: 65%;
-}
-
-.bar .progress-line.python span {
     width: 70%;
 }
 
+.bar .progress-line.Cpp span {
+    width: 90%;
+}
+
+.bar .progress-line.python span {
+    width: 80%;
+}
+
 .bar .progress-line.Java span {
-    width: 60%;
+    width: 70%;
 }
 
 .progress-line span::before {
@@ -604,7 +604,7 @@ img {
 }
 
 .progress-line.Javascript span::after {
-    content: "80%";
+    content: "85%";
 }
 
 .progress-line.C span::after {
@@ -631,3 +631,6 @@ img {
         margin: auto !important;
     }
     
+    .hidden {
+        display: none;
+      }

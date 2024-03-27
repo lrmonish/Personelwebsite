@@ -10,6 +10,12 @@
     <script defer src="./script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <!-- <style>
+        /* CSS for hiding elements */
+        .hidden {
+          display: none;
+        }
+      </style> -->
     <link rel="icon" href="images/MK3.png" type="image/icon type">
 
 
@@ -51,29 +57,28 @@
             <h1 id="contactme ">Contact me!!</h1>
             <div class="contact-box ">
                 <div class="contact-left ">
-                    <h3>Send your request</h3>
+                    <h3>Send Your Details</h3>
                     <form onsubmit="sendmail(event)" id="contact-form">
                         <div class="input-row ">
                             <div class="input-group ">
                                 <label>Name</label>
-                                <input type="text " name="user_name">
+                                <input type="text" id="user_name" name="user_name" title="Please enter a valid name (only letters and spaces allowed)" required >
                             </div>
                         </div>
                         <div class="input-row ">
                             <div class="input-group ">
                                 <label>E-mail</label>
-                                <input type="email " name="user_email">
+                                <input type="email" id="user_email" name="user_email" title="Enter Valid Email-Id"  required>
                             </div>
                         </div>
                         <div class="input-row ">
                             <div class="input-group ">
                                 <label>Ph-Number</label>
-                                <input type="number" name="user_num">
+                                <input type="number" id="user_num"  name="user_num"  title="Please enter a 10-digit phone number" required>
                             </div>
                         </div>
                         <label>Description</label>
-                        <textarea name="message"></textarea>
-                        <!--rows="5 " placeholder="Your message "></textarea>-->
+                        <textarea name="message"  title="Please Give Description" ></textarea>
                         <button type="submit" class="Btn" value="Send">submit</button>
                         <button type="reset" class="Btn" value="Send" style="width: 200px;">Clear</button>
                     </form>
@@ -98,10 +103,10 @@
                         </tr>
 
                     </table>
-                    <a href="https://github.com/lrmonish " />
+                    <a href="https://github.com/lrmonish ">
                     <Img class="link1 " Src="images/OIP.jpeg " />
                     </a>
-                    <a href="https://www.linkedin.com/in/monishkumar-lr-299b6a23b " />
+                    <a href="https://www.linkedin.com/in/monishkumar-lr-299b6a23b ">
                     <Img class="link1 " Src="images/R.png " />
                     <a>
 
@@ -115,6 +120,7 @@
             })();
 
             function sendmail(e) {
+
                 e.preventDefault()
                 let fullName = document.querySelector("input[name=user_name]").value;
                 let userEmail = document.querySelector("input[name=user_email]").value;
@@ -127,7 +133,6 @@
                     from_num: userNum,
                     message: userMessage
                 };
-                console.log(contactParams);
                 emailjs.send('service_3ov61f1', 'template_zcp6atq', contactParams).then(function(res) {
                     alert("Response Received..!")
                 })
